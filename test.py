@@ -7,13 +7,13 @@ WIDTH, HEIGHT = 1280, 720
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Kul(a) i rymden")
 
-PLANET_MASS = 100
-KULA_MASS = 5
-G = 25
+PLANET_MASS = 5.972*10**3  # kg
+KULA_MASS = 5               # kg
+G = 6.674*10**-1           # gravitational constant
 FPS = 60
-PLANET_SIZE = 50
-KULA_SIZE = 5
-VEL_SCALE = 100
+PLANET_SIZE = 50            # px
+KULA_SIZE = 5               # px
+VEL_SCALE = 10**2         # px/s
 
 BG = pygame.transform.scale(pygame.image.load("background.jpg"), (WIDTH, HEIGHT))
 PLANET = pygame.transform.scale(pygame.image.load("jupiter.png"), (PLANET_SIZE * 2, PLANET_SIZE * 2))
